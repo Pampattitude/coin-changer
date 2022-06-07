@@ -1,9 +1,7 @@
 const { optimalChange } = require("./coin-changer");
 
-// const testSet = [1, 2, 3, 5, 10, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
-// const changeBase = [2, 3, 5, 7, 11, 13]
-const testSet = [38];
-const changeBase = [11, 5, 13, 2];
+const testSet = [1, 2, 3, 5, 10, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
+const changeBase = [2, 3, 5, 7, 11, 13];
 for (const test of testSet) {
   console.log(`Computing change for ${test}...`);
   console.log(
