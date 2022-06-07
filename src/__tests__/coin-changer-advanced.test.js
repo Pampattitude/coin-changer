@@ -15,6 +15,12 @@ describe("Coin changer", () => {
   });
 
   it("should return the correct change for input 38 with base [2, 5, 11, 13]", () => {
+    // Note: this test might be wrong depending on the definition of "optimal".
+    // Assuming "optimal" means "least number of coins", this test is erroneous;
+    // it should return `{ 2: 0, 5: 1, 11: 3, 13: 0, rest: 0 }`.
+    // However, assuming "optimal" means "most high-value coins returned", the given
+    // result is the correct one
+
     const input = 38;
     const changeBase = [2, 5, 11, 13];
 
